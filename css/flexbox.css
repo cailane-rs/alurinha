@@ -1,7 +1,8 @@
 .cabecalhoPrincipal .container {
     display: flex;
     align-items: center;
-    justify-content: space-between; /*serve para distribuir o espaço sobrando entre os itens.
+    justify-content: space-between;
+    /*serve para distribuir o espaço sobrando entre os itens.
                                     Utilizamos o margin para criar espaço entre os itens. */
 }
 
@@ -28,14 +29,17 @@
 
 .rodapePrincipal-contatoForm-fieldset {
     display: flex;
-} 
+}
 
 .rodapePrincipal-navMap-list {
-    display: flex; 
-    /* flex-direction: column; o flex por padrão é 'row' que coloca ao lado/horizontal. Ao definir como 'column' você alinha os itens na vertical
+    display: flex;
+    /* flex-direction: column; o flex por padrão é 'row' que coloca ao lado/horizontal. 
+    Ao definir como 'column' você alinha os itens na vertical.
     flex-wrap: wrap; esta função quebra a linha e vai para a próxima coluna ao chegar na altura máxima. */
-    flex-flow: column wrap; /*faz de uma vez só a função dos 2 comentados*/
-    height: 252px; /*definindo a altura desta nav*/
+    flex-flow: column wrap;
+    /*faz de uma vez só a função dos 2 comentados*/
+    height: 252px;
+    /*definindo a altura desta nav*/
 }
 
 .conteudoPrincipal-cursos {
@@ -54,4 +58,15 @@
 
 .conteudoPrincipal-cursos-link:nth-child(4n+1) {
     margin-left: 0;
+}
+
+/* Parte mobile */
+.cabecalhoPrincipal-nav {
+    flex-direction: column;
+}
+
+.cabecalhoPrincipal .container {
+    flex-direction: column;
+    align-items: initial;
+    text-align: center;
 }
